@@ -1,0 +1,124 @@
+.primary-r ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  justify-content: flex-end;
+  .globe {
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      color: #ff8c00;
+    }
+    &:focus {
+      outline: none;
+    }
+    &::-ms-expand {
+      display: none;
+    }
+  }
+  .lang {
+    // &::before{
+    //       content: url('../../Assets/Images/language.svg');
+    //         padding-right: 12px;
+    //         display: flex;
+    //         align-items: center;
+    // }
+    .goog-te-menu-frame {
+      width: auto !important;
+    }
+    img {
+      display: none;
+    }
+    .goog-te-gadget-simple {
+      background-color: transparent;
+      border: none;
+    }
+    .goog-te-menu-value span {
+      font-family: OpenSans-Regular;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.2s;
+      border: none !important;
+    }
+    span[aria-hidden="true"] {
+      display: none;
+    }
+  }
+  .role {
+    span {
+      padding-right: 10px;
+      position: relative;
+      top: 2px;
+    }
+  }
+  .role {
+    text-transform: capitalize;
+  }
+  .SelectYourLang {
+    margin-left: 40px;
+    h4 {
+      color: #fff;
+      background: transparent;
+      border: none;
+      font-size: 16px;
+      line-height: 27px;
+      font-family: OpenSans-Regular;
+      font-weight: normal;
+    }
+    .list {
+      box-shadow: 0 1px 6px 0 rgba(32, 33, 36,.28);
+      border-radius: 4px;
+      li{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  li {
+    // padding: 9px 12px;
+    font-family: OpenSans-Regular;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 40px;
+    transition: 0.2s;
+    &:hover {
+      color: #ff8c00;
+      span {
+        color: #ff8c00 !important;
+      }
+      a {
+        color: #ff8c00;
+        svg {
+          path {
+            fill: #ff8c00;
+          }
+        }
+      }
+    }
+    svg {
+      // position: relative;
+      // bottom: 3px;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 27px;
+      font-weight: normal;
+      transition: 0.2s;
+      font-family: OpenSans-Regular;
+      // text-transform: capitalize;
+    }
+  }
+}

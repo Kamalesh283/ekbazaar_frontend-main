@@ -1,0 +1,69 @@
+.ForceSignin {
+  .content-inner-overlay {
+    width: 520px;
+    @media only screen and (max-width: 768px) {
+      width: 90%;
+    }
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      width: 500px;
+    }
+    .Title {
+      position: relative;
+
+      img {
+        position: absolute;
+        right: 20px;
+        top: 24px;
+        cursor: pointer;
+        width: 20px;
+        height: auto;
+      }
+    }
+
+    .module {
+      padding: 48px;
+      text-align: center;
+      background-color: #f7f9fc;
+      @media only screen and (max-width: 1024px) {
+        padding: 32px;
+      }
+
+      p {
+        font-family: OpenSans-Semibold;
+        font-size: 18px;
+        line-height: 34px;
+        color: #525252;
+        margin-bottom: 44px;
+        @media only screen and (max-width: 1024px) {
+          font-size: 16px;
+          margin-bottom: 28px;
+        }
+      }
+
+      .force {
+        button {
+          border-radius: 4px;
+          background: #ff8c00;
+          font-family: OpenSans-Semibold;
+          font-size: 18px;
+          max-width: 214px;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          transition: 0.2s;
+          height: 46px;
+          outline: none;
+          margin: auto;
+          width: 100%;
+
+          &:hover {
+            background: #d57500;
+          }
+          @media only screen and (max-width: 1024px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

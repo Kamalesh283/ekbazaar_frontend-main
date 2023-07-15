@@ -1,0 +1,33 @@
+.SendedText {
+    margin: 20px;
+    direction: rtl;
+    .mesage {
+        border-radius: 10px 0px 10px 10px;
+        padding: 12px 14px;
+        box-shadow: 0px 0px 4px #00000029;
+        border-radius: 10px 10px 0px 10px;     
+        background: #3405b5;
+        max-width: 268px;
+        width: max-content;
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        left: 26px;
+        color: #fff;
+        display: flex;
+        direction: initial;
+        justify-content: flex-end;
+        box-shadow: 0px 0px 4px #00000029;
+        word-break: break-word;
+    }
+    .texted-time {
+        max-width: 268px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        font-family: OpenSans-Regular;
+        font-size: 12px;
+        left: 26px;
+        color: #727781;
+        direction: initial;
+    }
+}

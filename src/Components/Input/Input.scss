@@ -1,0 +1,53 @@
+.input {
+  position: relative;
+  input {
+    padding: 11px 16px;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    line-height: 10px;
+    border: 1px solid #adb7ba;
+    border-radius: 4px;
+    height: 46px;
+    outline: none;
+    background-color: #fff;
+    &:disabled{
+      background-color:#f6f6f6;
+    }
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      font-size: 16px;
+      display: block;
+    }
+  }
+  .error {
+    font-family: OpenSans-Regular;
+    font-size: 10px;
+    line-height: 10px;
+    color: red;
+    text-transform: capitalize;
+  }
+}
+.custom {
+  position: relative;
+
+  input {
+    padding: 11px 16px;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    line-height: 10px;
+    border: 1px solid #adb7ba;
+    border-radius: 4px;
+    height: 46px;
+    outline: none;
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      font-size: 16px;
+      display: block;
+    }
+  }
+  .error {
+    font-family: OpenSans-Regular;
+    font-size: 10px;
+    line-height: 10px;
+    color: red;
+    text-transform: capitalize;
+  }
+}

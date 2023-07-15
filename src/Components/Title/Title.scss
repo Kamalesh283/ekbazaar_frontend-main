@@ -1,0 +1,18 @@
+.Title {
+    padding: 16px;
+    text-align: center;
+    background: #3405B5;
+    // border-radius: 4px 4px 0px 0px;
+
+     h3 {
+        font-family: OpenSans-Semibold;
+        font-size: 18px;
+        line-height: 33px;
+        color: #fff;
+        font-weight: normal;
+        @media screen and (max-width: 768px) {
+            font-family: OpenSans-Regular;
+            font-size: 16px;
+          }
+    }
+}

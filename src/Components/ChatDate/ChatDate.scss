@@ -1,0 +1,19 @@
+.ChatDate {
+    width: 100%;
+    text-align: center;
+    label{
+        // background: #ADB7BA;
+        padding: 4px 12px;
+        border-radius: 4px;
+        margin-top: 20px;
+        display: inline-block;
+        margin-bottom: 10px;
+        font-family: OpenSans-Semibold;
+        font-size: 12px;
+        line-height: 26px;
+        color: #1E1E1E;
+        @media only screen and (max-width: 768px) {
+            font-size: 9px;
+        }      
+    }
+}

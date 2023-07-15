@@ -1,0 +1,83 @@
+export const rootPath = '/'
+
+// export const levelone='/category1'
+export const leveltwo = '/category2'
+export const levelFive = '/category5'
+// export const foodBevarage='/food-beverages'
+// export const textileHandloom='/textile-handloom'
+// export const manufacturing='/manufacturing'
+// export const buildingConstruction='/building-construction'
+// export const agricultureFarming='/agricultiure-farming'
+// export const electricalEquipments='electrical-equipments'
+export const categoryPath = '/category'
+
+// export const register=`${rootPath}/register`
+// export const signin =`${rootPath}/signin`
+// export const signup =`${rootPath}/signup`
+
+export const listing = '/listing'
+export const productdescription = '/product-detail2'
+export const unregisteredseller = '/product-detail1'
+export const companyprofilenonPath = '/company-profile'
+export const category = '/category'
+export const about = '/about_us'
+export const searchResultsPath = '/result'
+export const forgot = "/forgot-password"
+export const buyerpreference="/buyer-preference"
+export const preference = `/buyerpreference`
+export const myprofile = `${preference}/myprofile`
+export const notification = `${preference}/notification`
+export const viewrequest = `${preference}/view-requests`
+export const account = `${preference}/account`
+export const logout = `${preference}/logout`
+export const purchasesubscription="/purchase-subscription"
+export const signin = `/signin`
+export const buyerSignin = `buyer${signin}`
+export const sellerSignin = `seller${signin}`
+export const signup = `/signup`
+export const register = `/register`
+export const _seller = '/seller'
+export const seller = `${_seller}/seller-central`
+export const bp = `${seller}/bussiness-profile`
+export const sellerproduct = `${seller}/product`
+export const selleraccount = `${seller}/seller-account`
+export const selleraccountplan = `${seller}/seller-account/plan`
+export const sellerhelp = `${seller}/help`
+export const enquiry= `${seller}/enquiry`
+export const sellerchat = `${seller}/chat`
+export const sellerchatbuyer = `${seller}/chat/:id`
+
+export const productinventory = "/product-inventory"
+export const myproduct = "/my_product"
+export const newproduct = "/add_product"
+export const sellerProductOffers = "/product_offers"
+
+export const thankyou = "/thankyou"
+export const profile = "/profile"
+export const xsaccount="/seller-account-settings"
+export const xsbussiness="/seller-bussiness-settings"
+export const pricingPath = '/pricing'
+export const payPath = '/pay'
+export const helpPath = '/help'
+export const servicesPath = '/services'
+export const announcementpath = '/announcement'
+export const freetrialpath = '/trial'
+export const partnerpath = '/partner'
+export const blogpath = '/blog'
+export const demoPath = '/demo'
+export const faqpath = '/faq'
+export const contactpath = '/contact'
+export const privacy = '/privacy_policy'
+export const disclaimer = '/disclaimer'
+export const productselection = '/productselection'
+
+export const mobilesellerbussinesdetails=`/tab`
+export const mobilesellersatutorydetails=`${seller}/tab2`
+export const mobilesellercontactdetails=`${seller}/tab3`
+export const mobilesellerestablishmentdetails=`${seller}/tab4`
+export const mobilesellercpdetails=`${seller}/tab5`
+export const emailVerification = '/user/:id'
+export const refund = '/refund_policy'
+export const offer = "/offer"
+export const offersearch = "/offer-search"
+

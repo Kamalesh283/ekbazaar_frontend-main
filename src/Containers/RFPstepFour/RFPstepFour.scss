@@ -1,0 +1,81 @@
+.RFPstepFour {
+
+  .Module {
+    padding: 107px ;
+    max-width: 634px;
+    background: #F7F9FC;
+    text-align: center;
+
+    @media screen and (max-width: 900px) and (min-width: 600px) {
+      margin: auto;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+      padding: 107px 88px;
+    }
+
+    @media only screen and (max-width: 500px) {
+      padding: 47px 10px !important;
+    }
+
+    h4 {
+      font-family: OpenSans-Bold;
+      font-size: 24px;
+      line-height: 45px;
+      color: #3405B5;
+      margin-bottom: 8px;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+
+    p {
+      font-family: OpenSans-Regular;
+      font-size: 18px;
+      line-height: 32px;
+      margin-bottom: 42px;
+      color: #727781;
+
+      @media only screen and (max-width: 500px) {
+        font-size: 16px;
+      }
+    }
+
+    .fetching-data {
+      margin-top: 24px;
+
+      button {
+        font-family: OpenSans-Semibold;
+        font-size: 16px;
+        line-height: 29px;
+        width: 100%;
+        border: 0.2px solid #ff8c00;
+        background: #ff8c00;
+        color: #fff;
+        padding: 8px 0;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.2s;
+        user-select: none;
+
+        @media only screen and (max-width: 500px) {
+          width: 80%;
+        }
+
+        &:hover {
+          background: #d57500;
+          border-color: #d57500;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+  }
+}

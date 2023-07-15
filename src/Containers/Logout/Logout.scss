@@ -1,0 +1,52 @@
+
+    .log-out-blk{
+        width: 400px;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+        p{
+            text-align: center;
+            font-family: OpenSans-Regular;
+            font-size: 16px;
+            line-height: 29px;
+            color: #727781;
+            margin-top: 32px;
+            margin-bottom: 22px;
+        }
+        .will {
+            display: flex;
+            width: 60%;
+            margin: auto;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            .execution{
+                width: 100px;
+                @media only screen and (max-width: 768px) {
+                    width: 82px;
+                }
+            button{
+                width: 100%;
+                height: 52px;
+                font-family: OpenSans-Semibold;
+                font-size: 16px;
+                line-height: 16px;
+                color: #fff;
+                background: #ff8c00;
+                border-radius: 4px;
+                text-transform: capitalize;
+                border: none;
+                cursor: pointer;
+                transition: 0.2s;
+                @media only screen and (max-width: 768px) {
+                    height: 46px;
+                }
+                &:hover {
+                  background: #d57500;
+                }
+                &:focus {
+                  outline: none;
+                }
+            }
+        }
+        }
+    }

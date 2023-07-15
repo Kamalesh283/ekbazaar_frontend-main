@@ -1,0 +1,504 @@
+.Seconadrynav {
+  @media only screen and (max-width: 768px) {
+    background: #f7f9fc;
+  }
+
+  .conatiner {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    justify-content: space-between;
+
+    .flbk {
+      display: flex;
+      align-items: center;
+    }
+
+    .signin-register {
+      display: flex;
+      align-items: center;
+
+
+
+      .sign-in-btn {
+        color: #ff8c00;
+        background: none;
+        font-family: OpenSans-Semibold;
+        font-size: 16px;
+        line-height: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        transition: 0.2s;
+        width: 116px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ff8c00;
+        margin-right: 20px;
+        border-radius: 4px;
+        padding: 0;
+        transition: 0.2s;
+
+        @media only screen and (min-width: 768px) and (max-width: 1200px) {
+          width: auto;
+          height: auto;
+          padding: 14px 18px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          width: auto;
+          border: none;
+          height: auto;
+          font-size: 12px;
+          color: #000;
+          margin: 0;
+          justify-content: flex-end;
+          display: none;
+
+          &::before {
+            content: 'Hi, ';
+          }
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+          width: auto;
+          border: none;
+          height: auto;
+          font-size: 16px;
+          color: #000;
+          margin: 0;
+          justify-content: flex-end;
+          margin-left: 18px;
+          padding: 0;
+          &::before {
+            content: 'Hi, ';
+          }
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          color: #fff;
+          background: #ff8c00;
+
+          @media only screen and (max-width: 1024px) {
+            background: none;
+            color: #ff8c00;
+          }
+        }
+      }
+
+      .Register {
+        background: #ff8c00;
+        border: none;
+        font-family: OpenSans-Semibold;
+        color: #fff;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 14px 27px;
+        text-transform: capitalize;
+        font-weight: 100;
+        cursor: pointer;
+        transition: 0.2s;
+        // width: 116px;
+        height: 45px;
+        border-radius: 4px;
+
+        @media only screen and (max-width: 1024px) {
+          display: none;
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 1200px) {
+          width: auto;
+          height: auto;
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          background: #d57500;
+        }
+      }
+
+    }
+
+    #id-for-offer-btn {
+      @media only screen and (min-width: 769px) and (max-width: 992px) {
+        button{
+            background: #FF8C00;
+            color: #FF8C00;
+            border-color: #FF8C00;
+            // padding: 12px 0;
+            color: #fff;
+        }
+      }
+      @media screen and (max-width: 768px) {
+
+        // display: none;
+        button {
+          width: auto;
+          height: 30px;
+          background: #3225A7;
+          animation: none;
+          border-color: #3225A7;
+          font-size: 14px;
+          font-family: OpenSans-Regular;
+          padding-left: 34px;
+
+          &::before {
+            background-size: 15px;
+            left: 8px;
+          }
+        }
+      }
+    }
+
+    .notification {
+      display: flex;
+      align-items: center;
+
+      .seller-home-icon {
+        // margin-right: 32px;
+        display: none;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .Offers {
+      margin-right: 20px;
+
+      @media only screen and (max-width: 1024px) {
+        margin-right: 0;
+      }
+
+      button {
+        width: auto;
+        height: 46px;
+        border-radius: 4px;
+        border: 1px solid #ff8c00;
+        font-family: OpenSans-Semibold;
+        font-size: 16px;
+        line-height: 16px;
+        color: #fff;
+        transition: 0.2s;
+        background-color: #fff;
+        cursor: pointer;
+        // background-image: url("../../Assets/Images/discount-fff.svg");
+        background-repeat: no-repeat;
+        background-position: 20%;
+        background-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 45px;
+        padding-right: 20px;
+        // margin-right: 38px;
+        position: relative;
+        outline: none;
+
+
+        -webkit-animation-duration: 4s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: flash;
+        animation-name: flash;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+        background: linear-gradient(to right, #ff8c00 8%, #fff 18%, #ff8c00 33%);
+        -webkit-background-size: 800px 104px;
+        position: relative;
+
+        &::before {
+          content: '';
+          background-image: url("../../Assets/Images/discount-fff.svg");
+          background-repeat: no-repeat;
+          background-position: 20%;
+          background-size: 20px;
+          width: 20px;
+          position: absolute;
+          left: 16px;
+          height: 20px;
+        }
+
+
+        &:hover {
+          color: #fff;
+
+          .dropdown {
+            display: block;
+
+          }
+        }
+        .overlay-dummy {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          z-index: 99;
+          left: 0;
+          right: 0;
+          bottom: 0;
+      }
+        .dropdown {
+          position: absolute;
+          width: 273px;
+          box-shadow: 0px 0px 10px #00000029;
+          border-radius: 4px;
+          // height: 134px;
+          background: #fff;
+          z-index: 9;
+          list-style: none;
+          padding: 25px 12px 25px 20px;
+          top: 46px;
+          left: 0;
+          display: none;
+
+          @media only screen and (min-width: 769px) and (max-width: 1200px) {
+
+            right: 0;
+            left: auto;
+          }
+
+          @media only screen and (max-width: 768px) {
+
+            right: 0;
+            left: auto;
+          }
+
+          li {
+            &:last-child {
+              a {
+                margin-bottom: 0;
+              }
+            }
+
+            a {
+              font-family: OpenSans-Regular;
+              font-size: 16px;
+              color: #2b2c33;
+              text-decoration: none;
+              text-align: left;
+              display: inherit;
+              margin-bottom: 14px;
+              transition: 0.2s;
+
+              &:hover {
+                color: #ff8c00;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .hamburger-mobile {
+      display: none;
+
+      @media only screen and (max-width: 1024px) {
+        display: block;
+        margin-right: 14px;
+
+        svg {
+          color: #3225a7;
+          font-size: 24px;
+        }
+      }
+    }
+
+    // 
+    .hamburger-web {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0.4000000059604645px solid #70707073;
+      border-radius: 4px;
+      margin-right: 21px;
+      font-size: 27px;
+      color: #3225a7;
+      cursor: pointer;
+
+      @media only screen and (max-width: 1024px) {
+        display: none;
+      }
+    }
+
+    .logo {
+      width: 222px;
+
+      @media only screen and (max-width: 1024px) {
+        width: 186px;
+
+      }
+      @media only screen and (max-width: 375px) {
+        width: 160px;
+      }
+
+      img {
+        cursor: pointer;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .search {
+      @media only screen and (max-width: 768px) {
+        display: none;
+        width: 100%;
+      }
+
+      .search-container {
+        max-width: 400px;
+
+        @media only screen and (min-width: 769px) and (max-width: 1200px) {
+          max-width: 332px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          max-width: 100%;
+        }
+        
+
+        form {
+          flex-wrap: nowrap;
+
+          @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+            width: 100%;
+          }
+
+          .search-res {
+            padding: 0;
+            width: auto;
+
+            .search-pop-over {
+              top: 49px;
+              left: 140px;
+              width: 290px;
+
+              @media only screen and (min-width: 993px) and (max-width: 1200px) {
+                left: 100px;
+              }
+              @media only screen and (min-width: 769px) and (max-width: 992px) {
+                left: 100px;
+                width: 69%;
+              }
+
+              @media only screen and (min-width: 376px) and (max-width: 768px){
+                left: 100px;
+                width: 70%;
+              }
+              @media only screen and (max-width: 375px) {
+                left: 100px;
+                width: 67%;
+              }
+            }
+          }
+
+          .prefer-location__control {
+            width: 140px;
+            border: 1px solid #7277814d;
+            background-image: url('../../Assets/Images/header-search-arrow.svg');
+            background-repeat: no-repeat;
+            background-position: 90%;
+            background-size: 10px;
+
+            @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+              width: 100px;
+            }
+
+            @media only screen and (max-width: 992px) {
+              width: 100px;
+            }
+
+            @media only screen and (max-width: 768px) {
+              // height: 36px;
+              background-position-y: 21px;
+            }
+
+          }
+
+          .prefer-location__value-container {
+            width: 80%;
+
+            @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+              width: 77%;
+            }
+
+            @media only screen and (max-width: 768px) {
+              // height: 36px;
+            }
+          }
+
+          .searchBox {
+            width: auto;
+            border-radius: 0px;
+            @media only screen and (min-width: 769px) and (max-width: 992px) {
+             width: 100%;
+             font-size: 14px;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+            }
+            @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+              width: inherit;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+
+    .hamburger-mobile {
+      display: none;
+
+      @media only screen and (max-width: 1024px) {
+        display: block;
+      }
+    }
+  }
+}
+
+@keyframes flash {
+  0% {
+    background-position: -468px 0
+  }
+
+  100% {
+    background-position: 468px 0
+  }
+}
+
+@-webkit-keyframes flash {
+  0% {
+    background-position: -468px 0
+  }
+
+  100% {
+    background-position: 468px 0
+  }
+}
+.elpBtn{
+  text-overflow: ellipsis;
+  width: 50px;
+}

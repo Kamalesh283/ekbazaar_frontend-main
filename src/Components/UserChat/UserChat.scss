@@ -1,0 +1,105 @@
+.UserChat {
+    padding: 15px 20px;
+    box-shadow: 0px 0px 0px #00000029;
+    border-bottom: 1px solid #e5e2e2;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    &:first-child{
+        border-top: 1px solid #e5e2e2;
+    }
+    .products-info{
+        width: 68%;
+        display: flex;
+        justify-content: flex-start;
+        .status-chat{
+            margin-right: 10px;
+            top: 9px;
+            position: relative;
+        
+            #active{
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: #57FF83;
+            }
+            #inactive{
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                // background-color: #FF0202;
+                background-color: lightslategrey;
+            }
+            #ofline{
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: #ADB7BA;
+            }
+        }
+        .info{
+            h5{
+                font-family: OpenSans-Semibold;
+                font-size: 12px;
+                line-height: 24px;
+                color: #2B2C33;
+                margin-bottom: 2px;
+                white-space: nowrap;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                cursor: pointer;
+                text-transform: capitalize;
+            }
+            h6{
+                font-family: OpenSans-Regular;
+                font-size: 11px;
+                line-height: 21px;
+                margin-bottom: 2px;
+                color: #2B2C33;
+                white-space: nowrap;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            p{
+                font-family: OpenSans-Regular;
+                font-size: 11px;
+                line-height: 21px;
+                margin-bottom: 2px;
+                color: #727781;
+                white-space: nowrap;
+                width: 93px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    .unread-time{
+        width: 32%;
+        display: flex;
+        justify-content: flex-end;
+        .no-of-unread{
+            width: 16px;
+            height: 16px;
+            font-family: OpenSans-Semibold;
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 11px;
+            color: #fff;
+            background-color: #ff8c00;
+            margin-right: 6px;
+            position: relative;
+            top: 3px;
+            display: table;
+            text-align: center;
+        }
+        .time{
+            font-family: OpenSans-Regular;
+                font-size: 11px;
+                line-height: 21px;
+                color: #727781;
+        }
+    }
+}

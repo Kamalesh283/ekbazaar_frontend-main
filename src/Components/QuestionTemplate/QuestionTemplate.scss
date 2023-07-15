@@ -1,0 +1,16 @@
+.QuestionCont{
+border: 1px solid #DFDFDF;
+border-radius: 4px;
+padding: 7px 14px 6px 14px;
+color: #55575A;
+font-size: 12px ;
+font-family: OpenSans-Regular;
+line-height: 17px ;
+display: inline-block;
+margin-bottom: 12px;
+cursor: pointer;
+margin-right: 8px;
+&::-webkit-scrollbar {
+    display: none;
+}
+}

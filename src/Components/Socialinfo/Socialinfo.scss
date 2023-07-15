@@ -1,0 +1,43 @@
+.social{
+ 
+    .share {
+        display: flex;
+        @media only screen and (max-width: 768px) {
+            display: none;
+         }
+       ul {
+            list-style: none;
+            display: flex;
+            width: 50%;
+            li {
+                display: flex;
+                padding-right: 8px;
+            }
+        }
+    }
+    .apps {
+        margin: 38px 0;
+        @media only screen and (max-width: 768px) {
+            display: none;
+         }
+         img {
+            padding-right: 12px;
+            cursor: pointer;
+        }
+    }
+    .contact{
+         ul {
+            list-style: none;
+            li{
+                a{
+                    font-family: OpenSans-Semibold;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 14px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+
+}

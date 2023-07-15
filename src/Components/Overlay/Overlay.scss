@@ -1,0 +1,21 @@
+.overlay-cmpt{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #00000026;
+    z-index: 999;
+    height: 100vh;
+    .content-inner-overlay{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        background: #fff;
+        // height: 300px;
+        width: 300px;
+        // based on your need set the width and height
+    }
+}

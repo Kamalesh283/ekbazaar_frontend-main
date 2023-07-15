@@ -1,0 +1,127 @@
+.AsideSellerPreference {
+  z-index: 999;
+  position: relative;
+  background: #fff;
+  height: 100%;
+  .UserNameCard {
+    display: flex;
+    background: #3225a7;
+    // border-radius: 4px;
+    padding: 24px;
+    align-items: center;
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      .img {
+        padding-right: 18px;
+      }
+      .info {
+        p {
+          font-family: OpenSans-Semibold;
+          font-size: 22px;
+          line-height: 16px;
+          color: #fff;
+          @media only screen and (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+        h1 {
+          font-family: OpenSans-Semibold;
+          font-size: 22px;
+          line-height: 16px;
+          color: #fff;
+          font-weight: normal;
+          @media only screen and (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .path {
+    // margin-top: 20px;
+    // box-shadow: 0px 3px 6px #00000014;
+    border-radius: 4px;
+    background: #fff;
+    min-height: 339px;
+    .custom {
+      width: 376px;
+      margin: 56px auto 0;
+      border: 0.4px solid #4539ab;
+      border-radius: 4px;
+      text-align: center;
+      justify-content: center;
+      color: #4539ab;
+      @media only screen and (min-width: 769px) and (max-width: 1200px) {
+        width: 286px;
+        height: 56px;
+      }
+      @media only screen and (max-width: 768px) {
+        width: 75%;
+        height: 46px;
+      }
+      .svg-icon {
+        padding-right: 10px;
+        svg {
+          fill: #4539ab;
+        }
+      }
+    }
+    a {
+      display: flex;
+      border-bottom: 1px solid #f6f6f6;
+      padding: 22px 46px;
+      text-decoration: none;
+      align-items: center;
+      font-family: OpenSans-Regular;
+      font-size: 16px;
+      line-height: 16px;
+      color: #16181d;
+      transition: 0.2s;
+      cursor: pointer;
+      @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        padding: 22px;
+      }
+      span {
+        padding-right: 26px;
+        display: block;
+      }
+      &:hover {
+        background: #f7f9fc;
+      }
+      .svg-icon {
+        padding-right: 26px;
+      }
+    }
+    button {
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      font-family: Axiforma-Medium;
+      font-size: 14px;
+      line-height: 16px;
+      color: #16181d;
+      transition: 0.2s;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      &:hover {
+        background: #f7f9fc;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .active {
+      color: #3225a7;
+      background: #f7f9fc;
+      .svg-icon {
+      }
+      svg {
+        fill: #3225a7;
+      }
+    }
+  }
+}

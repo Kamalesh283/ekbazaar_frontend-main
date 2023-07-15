@@ -1,0 +1,30 @@
+.CatgList{
+    border: 1px solid #DFDFDF;
+border-radius: 4px;
+padding: 6px 10px 7px 10px;
+text-align: center;
+color: #55575A;
+width: auto;
+display:inline-block;
+margin: 0 10px 14px 0;
+font-size: 12px;
+font-family: OpenSans-Regular;
+line-height: 17px;
+cursor: pointer;
+}
+
+.CatgListSelected{
+    border: 1px solid #FF8C00;
+    border-radius: 4px;    
+    padding: 6px 10px 7px 10px;
+    text-align: center;
+    color:#FFFF;
+    width: auto;
+    display:inline-block;
+    margin: 0 10px 14px 0;
+    font-size: 12px;
+    font-family: OpenSans-Regular;
+    background-color: #FF8C00;
+    line-height: 17px;
+    cursor: pointer;
+}

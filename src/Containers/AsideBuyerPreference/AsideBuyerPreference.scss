@@ -1,0 +1,121 @@
+.AsideBuyerPreference {
+  .UserNameCard {
+    display: flex;
+    background: #3225a7;
+    border-radius: 4px;
+    padding: 24px;
+    align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      pointer-events: none;
+
+      .img {
+        padding-right: 18px;
+      }
+
+      .info {
+        display: flex;
+        align-items: center;
+
+        p {
+          font-family: OpenSans-Regular;
+          font-size: 18px;
+          line-height: 29px;
+          color: #fff;
+
+          .comma {
+            visibility: hidden;
+          }
+        }
+
+        h1 {
+          font-family: OpenSans-Regular;
+          font-size: 18px;
+          line-height: 29px;
+          color: #fff;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .path {
+    margin-top: 20px;
+    box-shadow: 0px 3px 6px #00000014;
+    border-radius: 4px;
+    background: #fff;
+    min-height: 339px;
+
+    a {
+      display: flex;
+      padding: 18px 24px;
+      text-decoration: none;
+      align-items: center;
+      font-family: OpenSans-Semibold;
+      font-size: 14px;
+      line-height: 16px;
+      color: #16181d;
+      transition: 0.2s;
+      cursor: pointer;
+      text-transform: capitalize;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      &:hover {
+        background: #f7f9fc;
+      }
+
+      .svg-icon {
+        padding-right: 16px;
+        position: relative;
+        top: 3px;
+
+        @supports (-webkit-touch-callout: none) {
+          /* CSS specific to iOS devices */
+          position: relative;
+          top: 0;
+        }
+      }
+    }
+
+    button {
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      font-family: OpenSans-Semibold;
+      font-size: 14px;
+      line-height: 16px;
+      color: #16181d;
+      transition: 0.2s;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+
+      &:hover {
+        background: #f7f9fc;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .active {
+      color: #3225a7;
+      background: #f7f9fc;
+
+      .svg-icon {}
+
+      svg {
+        fill: #3225a7;
+      }
+    }
+  }
+}

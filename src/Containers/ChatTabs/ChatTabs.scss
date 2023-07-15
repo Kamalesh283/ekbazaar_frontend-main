@@ -1,0 +1,87 @@
+.chatOuter{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px -3px 6px #00000029;
+border-radius: 12px 12px 0px 0px;
+}
+
+
+#chatTabs .react-tabs__tab-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 39px;
+    border-bottom: 0.8px solid #E3E3E3;
+    margin: 0 0 0;
+}
+#chatTabs .react-tabs__tab-panel{
+    padding: 24px 20px 15px 20px;
+}
+
+#chatTabs .react-tabs__tab--selected{
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ color:#3405B5 !important;
+ border-bottom: 3px solid #3405B5 !important;
+ font-family: OpenSans-Semibold !important;
+}
+
+#chatTabs .react-tabs__tab::after{
+    display: none;
+}
+#chatTabs .react-tabs__tab {
+    padding: 7px 0; // 13px 0;
+    font-size: 14px;
+    font-family:OpenSans-Semibold ;
+    line-height:19px ;
+    color: #707070;
+    border-bottom: 0.8px solid #E3E3E3;
+border: none;
+}
+
+.tabIcon{
+    width: 17px;
+    height: 17px;
+    position: relative;
+    bottom: -2px;
+    margin-right: 7px;
+}
+
+.normalButton {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    opacity: 1;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px 14px;
+    position: relative;
+    top: 18px;
+    left: 45%;
+    z-index: 99;
+    transform: rotate(180deg);
+  }
+  
+  .rotatingButton{
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    opacity: 1;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px 14px;
+    position: relative;
+    top: 18px;
+    left: 45%;
+    z-index: 99;
+  transform: rotate(0deg);
+  }
+
+.maximum{
+    height: max-content;
+    border-bottom: 0.8px solid #E3E3E3;
+
+}
+.minimum{
+    height:50px;
+overflow: hidden;
+}

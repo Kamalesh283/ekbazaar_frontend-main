@@ -1,0 +1,112 @@
+.Browseby {
+  box-shadow: 0px 3px 4px rgba(32, 33, 36, 0.28);
+  @media only screen and (max-width: 768px) {
+    display: block;
+    background: #f7f9fc;
+    box-shadow: none;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .conatiner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    label {
+      font-family: OpenSans-Regular;
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 0;
+      width: 92px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        display: none;
+      }
+    }
+    .handler {
+      list-style: none;
+      display: flex;
+      width: 100%;
+      padding: 14px 0;
+      margin: 0;
+      justify-content: space-between;
+      align-items: center;
+      @media only screen and (max-width: 1200px) {
+        width: 100%;
+        overflow: auto;
+        overflow-y: hidden;
+        height: 38px;
+        padding: 0;
+      }
+
+      li {
+        white-space: nowrap;
+        // overflow: hidden;
+        text-overflow: ellipsis;
+        &:first-child{
+          overflow: visible;
+        }
+        @media only screen and (max-width: 1200px) {
+          flex: 0 0 auto;
+        }
+        &:hover {
+          a {
+            color: #ff8c00;
+            span {
+              svg {
+                transition: 0.2s;
+                color: #ff8c00 !important;
+              }
+            }
+          }
+        }
+
+        a,
+        span {
+          font-family: OpenSans-Semibold;
+          color: #000;
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 16px;
+          padding: 12px 8px;
+          cursor: pointer;
+          transition: 0.2s;
+          @media only screen and (max-width: 768px) {
+            padding: 8px;
+            font-size: 12px;
+            // border-bottom: 1px solid #eae8e8;
+          }
+          @media only screen and (min-width: 769px) and (max-width: 1024px) {
+            font-size: 16px;
+            color: #727781;
+            padding: 6px 8px;
+          }
+        }
+        .active {
+          color: #ff8c00 !important;
+          border-bottom: 3px solid #ff8c00;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Browseby {
+    .conatiner {
+      ul {
+        width: 100%;
+      }
+    }
+  }
+}

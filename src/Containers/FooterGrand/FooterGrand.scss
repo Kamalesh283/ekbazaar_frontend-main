@@ -1,0 +1,203 @@
+.footer-grand {
+  // background : #1d1b33;
+  // padding    : 60px 0 0;
+  // font-family: OpenSans-Semibold;
+
+  background: #1d1b33;
+  padding: 60px 0 0;
+  font-family: OpenSans-Semibold;  
+  position: relative;
+  z-index: 99;
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    padding: 26px 0 0;
+  }
+
+  .ovelay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background: #00000050;
+  }
+
+  .box {
+    display        : flex;
+    justify-content: space-around;
+    flex-direction : row;
+    padding-bottom : 72px;
+
+    // border-bottom: 1px solid #eeeeee2e;
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      padding  : 0;
+    }
+
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      padding-bottom: 24px;
+    }
+
+    .social {
+      width: 30%;
+
+      @media only screen and (max-width: 768px) {
+        width  : 50%;
+        padding: 16px 0;
+      }
+    }
+
+    .box-container {
+      width: 70%;
+
+      @media only screen and (max-width: 768px) {
+        width  : 50%;
+        padding: 16px 0;
+      }
+
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        width: 25%;
+
+        &:last-child {
+          display: none;
+        }
+      }
+
+      .list {
+        li {
+          list-style : none;
+          line-height: 34px;
+
+          a, p {
+            font-family    : OpenSans-Regular;
+            color          : #fff;
+            text-decoration: none;
+            font-size      : 14px;
+            transition     : 0.2s;
+            cursor         : pointer;
+            white-space    : nowrap;
+            overflow       : hidden;
+            text-overflow  : ellipsis;
+
+            @media only screen and (max-width: 768px) {
+              white-space: inherit;
+            }
+
+            @media only screen and (min-width: 769px) and (max-width: 1024px) {
+              white-space: inherit;
+            }
+
+            &:hover {
+              color: #ff8c00;
+            }
+          }
+        }
+      }
+
+      h1 {
+        font-family  : OpenSans-Semibold;
+        color        : #fff;
+        font-size    : 18px;
+        line-height  : 17px;
+        margin-bottom: 20px;
+        font-weight  : normal;
+        margin-top   : 0;
+
+        @media only screen and (max-width: 768px) {
+          font-size  : 16px;
+          line-height: 17px;
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+          font-size    : 14px;
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+
+  .ind-loc {
+    @media only screen and (max-width: 768px) {
+      // padding: 0 16px;
+    }
+
+    .footer-links {
+      margin: 38px 0;
+
+      h4 {
+        font-family  : OpenSans-Semibold;
+        color        : #fff;
+        font-size    : 15px;
+        font-weight  : normal;
+        margin-bottom: 10px;
+      }
+
+      span {
+        font-family: OpenSans-Regular;
+        color      : #fff;
+        font-size  : 13px;
+        line-height: 24px;
+        text-align : left;
+      }
+    }
+  }
+
+  .copyrights {
+    padding        : 20px 0;
+    border-top     : 1px solid #eeeeee2e;
+    display        : flex;
+    justify-content: space-between;
+    // margin-top: 48px;
+
+    p {
+      font-family: OpenSans-Semibold;
+      color      : #fff;
+      font-size  : 13px;
+      line-height: 27px;
+      width      : 50%;
+      display    : flex;
+      align-items: center;
+      margin     : 0;
+
+      .svg-icon {
+        position: relative;
+        top     : 2px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        // padding: 0 16px;
+        width          : 100%;
+        justify-content: center;
+        font-family    : OpenSans-Regular;
+        font-size      : 12px;
+      }
+    }
+  }
+}
+
+#custom-for-mobile {
+  border-top: 1px solid #eeeeee2e;
+
+  .apps {
+    display   : block;
+    text-align: center;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .share {
+    @media only screen and (max-width: 768px) {
+      display      : block !important;
+      text-align   : center;
+      border-bottom: 1px solid #eeeeee2e;
+      padding      : 18px 0;
+    }
+
+    ul {
+      width          : 100%;
+      justify-content: center;
+    }
+  }
+}

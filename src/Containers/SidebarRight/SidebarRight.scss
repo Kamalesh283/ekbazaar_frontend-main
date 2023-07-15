@@ -1,0 +1,129 @@
+.SidebarRight {
+  position: fixed;
+  // width: 480px;
+  width: 475px;
+  right: 0;
+  top: 0;
+  background: #fff;
+  height: 100vh;
+  z-index: 999;
+  @media only screen and (min-width: 769px) and (max-width: 1200px) {
+    width: 333px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 282px;
+  }
+  .overlay-for-sidebar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #00000066;
+    z-index: 999;
+    height: 100vh;
+  }
+  .AsideBuyerPreference {
+    // position: relative;
+    position: relative;
+    z-index: 999;
+    height: 100%;
+    // width: 282px;
+    right: 0;
+    top:0;
+    .UserNameCard {
+      border-radius: 0px;
+      padding: 34px 48px;
+      @media only screen and (max-width: 768px) {
+        padding: 22px 32px;
+      }
+      @media only screen and (min-width: 769px) and (max-width: 1200px) {
+        padding: 30px 48px;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        .info {
+          display: flex;
+          align-items: center;
+          p {
+            font-size: 22px;
+            padding-right: 4px;
+            font-family: OpenSans-Semibold;
+            @media only screen and (max-width: 768px) {
+              font-size: 16px;
+            }
+          }
+          h1 {
+            font-size: 22px;
+            font-family: OpenSans-Semibold;
+            text-transform: capitalize;
+            @media only screen and (max-width: 768px) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .path {
+      margin-top: 0;
+      border-radius: 0px;
+      height: 100%;
+      box-shadow: none !important;
+      a {
+        color: #16181d;
+        padding: 24px 48px;
+        font-family: OpenSans-Regular;
+        font-size: 16px;
+        line-height: 16px;
+        @media only screen and (max-width: 768px) {
+          font-size: 14px;
+          padding: 16px 32px;
+        }
+        span {
+          padding-right: 26px;
+          display: block;
+        }
+        &:hover {
+          color: #3405b5;
+        }
+      }
+      .active {
+        // color: #3405B5  ;
+
+        @media only screen and (min-width: 769px) and (max-width: 1200px) {
+          font-family: OpenSans-Semibold;
+          color: #3405b5;
+        }
+      }
+      .custom {
+        justify-content: center;
+        width: 376px;
+        height: 56px;
+        margin: auto;
+        padding: 0;
+        margin-top: 50px;
+        color: #4539ab;
+        border: 1px solid #4539ab;
+        border-radius: 4px;
+        @media only screen and (min-width: 769px) and (max-width: 1200px) {
+          width: 286px;
+          height: 56px;
+        }
+        @media only screen and (max-width: 768px) {
+          width: 75%;
+          height: 46px;
+          margin-top: 25px;
+        }
+        span {
+          color: #4539ab;
+        }
+        svg {
+          color: #4539ab;
+          fill: #4539ab;
+        }
+      }
+    }
+  }
+}

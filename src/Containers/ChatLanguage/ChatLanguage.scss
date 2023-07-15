@@ -1,0 +1,109 @@
+.ChatLanguage {
+  border-radius: 10px 10px 0 0;
+  height: 432px;
+  width: 350px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #00000029;
+  @media only screen and (max-width: 500px) {
+    position: absolute;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+  }
+  @media screen and (min-width: 501px) and (max-width: 1024px) {
+    position: fixed;
+    bottom: 0;
+    right: 11px;
+    height: 571px;
+  }
+  .ChatTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h5 {
+      .active {
+        width: 7px;
+        height: 7px;
+        display: inline-block;
+        background-image: linear-gradient(#57ff83, #00d91c);
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+      .total-unread-count {
+        width: 18px;
+        height: 18px;
+        font-size: 9px;
+        background: #ff8c00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-left: 7px;
+      }
+    }
+    img {
+      cursor: pointer;
+      width: 13px;
+    }
+  }
+  .content {
+    padding: 25px 20px;
+    .bodycopy {
+      font-family: OpenSans-Regular;
+      font-size: 16px;
+      line-height: 28px;
+      color: #727781;
+      margin-bottom: 14px;
+    }
+    .select-language-chat {
+      select {
+        width: 100%;
+        height: 42px;
+        appearance: none;
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+        border: 1px solid #dee2e4;
+        border-radius: 4px;
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        line-height: 26px;
+        color: #2b2c33;
+        outline: none;
+        margin-bottom: 14px;
+        cursor: pointer;
+        background-image: url("../../Assets/Images/dropdown-arrow-chat.svg");
+        background-repeat: no-repeat;
+        background-position: 95%;
+        background-color: #fff;
+      }
+      .continue {
+        margin-top: 22px;
+      }
+    }
+    .continue {
+      button {
+        width: 100%;
+        height: 42px;
+        background: #ff8c00;
+        border: none;
+        border-radius: 4px;
+        font-family: OpenSans-Semibold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .css-4ljt47-MenuList {
+    max-height:200px;
+  }
+}
