@@ -205,18 +205,7 @@ class ChatWithUs extends Component {
 
             })
         })
-        const ss =uniqBy(temp, 'id').map((v) => {
-
-            return ({
-                id: v.id,
-                name: v.authorId,
-                isTyping: false,
-                lastSeenMessageId: v.id,
-                bgImageUrl: undefined
-            })
-        }
-        )
-        return ss
+        
     }
 
     sendMessage = (message) => {
@@ -417,4 +406,4 @@ const mapDispatchToProps = dispatch => ({
     }, dispatch)
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(ChatWithUs));
+export default connect(mapStateToProps, mapDispatchToProps)(ChatWithUs);

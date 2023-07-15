@@ -1,0 +1,124 @@
+#chatContainer {
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 10px #00000029;
+  border-radius: 10px 10px 0px 0px;
+  width: 360px;
+  position: fixed;
+  bottom: 0;
+  right: 300px;
+  z-index: 999;
+}
+
+@media only screen and (min-width:1101px){
+
+  .max{
+    height: 530px;
+  }
+  .min{
+    height: 52px;
+  }
+}
+@media only screen and (min-width:501px) and (max-width:1100px){
+  .max{
+    height: 571px !important;
+  }
+  .min{
+    height: 52px;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    font-size: 29px;
+    cursor: pointer;
+    z-index: 0;
+  }}
+
+// @media only screen and (min-width:1100px){
+
+//   .max{
+//     height: 530px;
+//   }
+//   .min{
+//     height: 52px;
+//   }
+// }
+.ChatHeader {
+  color: #ffffff;
+  height: 52px;
+  padding: 8px 0 7px 0;
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+    display: inline-block;
+    font-size: 16px;
+    font-family: OpenSans-Semibold;
+    line-height: 22px;
+    margin-left: 8px;
+  }
+  p {
+    font-family: OpenSans-Regular;
+    font-size: 11px;
+    line-height: 15px;
+    margin-left: 14px;
+  }
+}
+
+.Indicator {
+  height: 6px;
+  width: 6px;
+  position: relative;
+  top: 7px;
+}
+
+.drpIndicator {
+  width: 13px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.ChatSecFooter {
+  width: 360px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  border-top: 0.5px solid #E3E3E3;
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    padding: 23px 10px 22px 20px;
+
+    textarea {
+      border: none;
+      outline: none;
+      resize: none;
+      font-size: 14px;
+      font-family: OpenSans-Regular;
+      color: #727781;
+    }
+  }
+}
+.menuImg {
+  width: 18px;
+  height: 10px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.sendImg {
+  width: 44px;
+  height: 44px;
+  position: relative;
+  top: -12px;
+  cursor: pointer;
+}
+.CategoryPostion{
+  position: absolute;
+  bottom: 56px;
+}
+.crossBtn{
+  width: 13px;
+  height: 40px;
+}

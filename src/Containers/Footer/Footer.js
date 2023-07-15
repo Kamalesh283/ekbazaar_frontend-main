@@ -3,17 +3,16 @@ import FooterGrand from '../FooterGrand/FooterGrand'
 import FooterNotifier from '../FooterNotifier/FooterNotifier'
 import moment from 'moment'
 import './Footer.scss'
-
 export default class Footer extends Component {
-    /*shouldComponentUpdate(nextProps, nextState) {
+    shouldComponentUpdate(nextProps, nextState) {
         if (nextProps && nextProps.hasAccess && this.props.hasAccess !== this.props.hasAccess)
             return true
         return true
-    } ---kamalesh*/
+    }
 
     render() {
         // const { seller, userType, hasAccess } = this.props
-       /* const { seller, userType, hasAccess, buyer } = this.props;
+        const { seller, userType, hasAccess, buyer } = this.props;
         // let isPartilyRegistorStatus = buyer.isPartilyRegistor === true ? true : false
         let isPartialyRegistorStatus = false;
         if (buyer && buyer.isPartialyRegistor){
@@ -35,13 +34,12 @@ export default class Footer extends Component {
                         ?
                         4
                         :
-                        0 ---Kamalesh*/
+                        0
         return (
             <div className="Footer">
                 
                 {/* {status !== 0 ? <FooterNotifier status={status} /> : null} */}
-                {/*status !== 0 ? <FooterNotifier status={status} isPartilyRegistor={isPartialyRegistorStatus} /> : null---kamalesh*/}
-                <FooterNotifier/>
+                {status !== 0 ? <FooterNotifier status={status} isPartilyRegistor={isPartialyRegistorStatus} /> : null}
                 <FooterGrand />
             </div>
         )

@@ -1,0 +1,20 @@
+.RemoveListingPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  @media screen and (max-width: 768px) {
+   width: 90%;
+}
+  .Slide {
+    position: relative;
+    img {
+      position: absolute;
+      right: 20px;
+      z-index: 99;
+      top: 26px;
+      cursor: pointer;
+    }
+  }
+}

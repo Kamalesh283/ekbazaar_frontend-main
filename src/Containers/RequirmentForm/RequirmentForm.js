@@ -20,8 +20,6 @@ import history from "../../Routes/history";
 import { bannerLang } from '../../utils/languages/home'
 import { translate } from 'react-i18nify';
 import { setTranslationsGetter } from 'react-i18nify';
-
-setTranslationsGetter(bannerLang);
 import {
   sendOtp,
   // setOtp,
@@ -31,6 +29,9 @@ import {
   resetUser,
   acticateAccount,
 } from "../../store/actions/common";
+
+setTranslationsGetter(bannerLang);
+
 
 const options = [
   { value: "Banglore", label: "Banglore" },
@@ -253,8 +254,8 @@ export class RequirmentForm extends Component {
         });
         break;
       }
-      default:
-        "";
+      default:;
+      
     }
   };
   shouldComponentUpdate(nextProps, nextState) {

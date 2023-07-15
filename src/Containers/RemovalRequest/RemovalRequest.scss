@@ -1,0 +1,151 @@
+.RemovalRequest {
+  .module {
+    max-width: 100%;
+    width: 634px;
+    background: #f7f9fc;
+    padding: 34px 50px;
+    @media screen and (max-width: 768px) {
+     padding: 24px;
+   }
+    .Form {
+      form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .form-footer {
+          margin-top: 30px;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          input[type="reset"]{
+            font-family: OpenSans-Semibold;
+            font-size: 16px;
+            line-height: 29px;
+            width: 258px;
+            height: 55px;
+            border: 0.2px solid #ff8c00;
+            background: #fff;
+            color: #ff8c00;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.2s;
+            user-select: none;
+            @media screen and (max-width: 768px) {
+             width: 48%;
+             font-size: 14px;
+             height: 46px;
+            }
+            &:hover {
+              background: #ff8c00;
+              border-color: #ff8c00;
+              color: #fff;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+          input[type="submit"] {
+            font-family: OpenSans-Semibold;
+            font-size: 16px;
+            line-height: 29px;
+            width: 258px;
+            height: 55px;
+            border: 0.2px solid #ff8c00;
+            background: #ff8c00;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.2s;
+            user-select: none;
+            @media screen and (max-width: 768px) {
+              width: 48%;
+              font-size: 14px;
+              height: 46px;
+             }
+            &:hover {
+              background: #d57500;
+              border-color: #d57500;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        .input {
+          width: 48%;
+          margin-bottom: 20px;
+          @media screen and (max-width: 768px) {
+           width: 100%;
+          }
+          input {
+            width: 100%;
+            outline: none;
+            :focus{
+              outline: none;
+            }
+          }
+          input[type="tel"] {
+            padding-left: 80px;
+          }
+        .tel-container {
+          position: absolute;
+          top: 0px;
+          left: 2px;
+          width: 68px;
+
+          .custom-select__value-container {
+            padding: 0;
+          }
+        }
+        }
+        .custom {
+          width: 100%;
+          margin-bottom: 20px;
+
+          input {
+            width: 100%;
+            outline: none;
+
+            :focus {
+              outline: none;
+            }
+          }
+
+          input[type="tel"] {
+            padding-left: 80px;
+          }
+
+          .tel-container {
+            position: absolute;
+            top: 0px;
+            left: 2px;
+            width: 68px;
+
+            .custom-select__value-container {
+              padding: 0;
+            }
+          }
+        }
+        textarea {
+          width: 100%;
+          padding: 12px 14px;
+          font-family: OpenSans-Regular;
+          font-size: 14px;
+          line-height: 10px;
+          border: 1px solid #adb7ba;
+          border-radius: 4px;
+          height: 152px;
+          border-radius: 4px;
+          resize: none;
+          outline: none;
+          @media screen and (max-width: 768px) {
+          height: 78px;
+          }
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}

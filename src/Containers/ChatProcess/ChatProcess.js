@@ -128,7 +128,7 @@ class ChatProcess extends Component {
             name: buyer.name,
             mobile: buyer.mobile,
             email: buyer.email,
-            msg: this.state.msgremoving-scroll
+            msg: this.state.msgremoving
         }
         const resp = await contactSupportApi(data)
         if (resp.success) {
